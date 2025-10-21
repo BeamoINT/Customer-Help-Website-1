@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Step-by-step guide to fix WiFi driver issues on Linux Mint">
-    <title>Linux Mint WiFi Driver Fix Guide</title>
+    <meta name="description" content="Step-by-step guide to fix WiFi driver issues on Linux Mint 22 for Intel-based systems">
+    <title>Linux Mint 22 WiFi Driver Fix Guide - Intel Systems</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,12 +27,12 @@
                             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
                         </svg>
                     </div>
-                    <div class="logo-text">
-                        <h1>Linux Mint WiFi Fix</h1>
-                        <span class="version-badge">v1.0</span>
-                    </div>
+                <div class="logo-text">
+                    <h1>Linux Mint 22 WiFi Fix</h1>
+                    <span class="version-badge">Intel Systems</span>
                 </div>
-                <p class="tagline">Professional WiFi Driver Installation Guide</p>
+            </div>
+            <p class="tagline">Broadcom WiFi Driver Installation Guide for Intel-Based Systems</p>
                 <div class="header-stats">
                     <div class="stat-item">
                         <span class="stat-icon">⚡</span>
@@ -68,9 +68,9 @@
                     <div class="alert-content">
                         <div class="alert-header">
                             <h2 class="alert-title">Driver Manager Issue</h2>
-                            <span class="alert-badge">Important</span>
+                            <span class="alert-badge">Linux Mint 22</span>
                         </div>
-                        <p>If you don't see another option in Driver Manager, you'll need to remove the wrong driver and install the correct one manually. Follow the steps below to fix your WiFi connection.</p>
+                        <p>If you don't see another option in Driver Manager on your Linux Mint 22 system, you'll need to remove the wrong driver and install the correct one manually. This guide is specifically for Intel-based systems (including older MacBooks with Intel chips).</p>
                     </div>
                 </div>
             </section>
@@ -101,8 +101,8 @@
                         <div class="requirement-icon-bg">
                             <div class="requirement-icon">🐧</div>
                         </div>
-                        <h3>Linux Mint</h3>
-                        <p>The computer needing the WiFi driver fix</p>
+                        <h3>Linux Mint 22</h3>
+                        <p>Intel-based system (including older MacBooks) needing the WiFi driver fix</p>
                         <div class="card-decoration"></div>
                     </div>
                 </div>
@@ -119,7 +119,7 @@
                     <div class="step-number">1</div>
                     <div class="step-content">
                         <h3 class="step-title">Download the Required Packages</h3>
-                        <p class="step-description">On the other computer with internet access, download these .deb packages from the official Ubuntu mirrors. Click the download buttons below:</p>
+                        <p class="step-description">On the other computer with internet access, download these .deb packages for your Intel-based Linux Mint 22 system. Click the download buttons below:</p>
                         
                         <div class="package-download-grid">
                             <div class="package-download-card">
@@ -127,16 +127,16 @@
                                     <span class="package-icon">📦</span>
                                     <code class="package-name">b43-fwcutter</code>
                                 </div>
-                                <p class="package-description">Utility for extracting Broadcom 43xx firmware</p>
+                                <p class="package-description">Utility for extracting Broadcom 43xx firmware (Intel/AMD64)</p>
                                 <div class="download-buttons">
-                                    <a href="https://packages.ubuntu.com/jammy/b43-fwcutter" class="download-btn primary" target="_blank" rel="noopener noreferrer">
+                                    <a href="http://mirrors.kernel.org/ubuntu/pool/main/b/b43-fwcutter/b43-fwcutter_019-10_amd64.deb" class="download-btn primary" download>
                                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" fill="currentColor"/>
                                         </svg>
-                                        <span>Download Package</span>
+                                        <span>Download for Intel (64-bit)</span>
                                     </a>
                                 </div>
-                                <p class="package-version">Ubuntu 22.04 (Jammy) - All architectures available</p>
+                                <p class="package-version">Version 019-10 - For Ubuntu 24.04 (Noble) / Linux Mint 22</p>
                             </div>
 
                             <div class="package-download-card">
@@ -144,16 +144,16 @@
                                     <span class="package-icon">📦</span>
                                     <code class="package-name">firmware-b43-installer</code>
                                 </div>
-                                <p class="package-description">Firmware installer for the b43 driver</p>
+                                <p class="package-description">Firmware installer for the b43 driver (All architectures)</p>
                                 <div class="download-buttons">
-                                    <a href="https://packages.ubuntu.com/jammy/firmware-b43-installer" class="download-btn primary" target="_blank" rel="noopener noreferrer">
+                                    <a href="http://mirrors.kernel.org/ubuntu/pool/multiverse/b/b43-fwcutter/firmware-b43-installer_019-10_all.deb" class="download-btn primary" download>
                                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" fill="currentColor"/>
                                         </svg>
-                                        <span>Download Package</span>
+                                        <span>Download Installer</span>
                                     </a>
                                 </div>
-                                <p class="package-version">Ubuntu 22.04 (Jammy) - Works on all systems</p>
+                                <p class="package-version">Version 019-10 - For Ubuntu 24.04 (Noble) / Linux Mint 22</p>
                             </div>
                         </div>
 
@@ -162,9 +162,8 @@
                                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" fill="currentColor"/>
                             </svg>
                             <div>
-                                <p><strong>How to download:</strong> Click the buttons above to visit the official Ubuntu package pages. On each page, scroll down to the "Download" section and select your system architecture (amd64 for 64-bit, i386 for 32-bit).</p>
-                                <p class="info-note"><strong>For Linux Mint 21:</strong> Use the Ubuntu 22.04 (Jammy) versions shown above. These are compatible with Linux Mint 21.x</p>
-                                <p class="info-note"><strong>For Linux Mint 20:</strong> If you're on Mint 20, use <a href="https://packages.ubuntu.com/focal/b43-fwcutter" target="_blank" rel="noopener noreferrer">focal/20.04 versions</a> instead</p>
+                                <p><strong>Ready to download:</strong> These are the exact packages you need for your Intel-based system running Linux Mint 22. Click both download buttons above to download the .deb files directly to your computer.</p>
+                                <p class="info-note"><strong>Note:</strong> These packages are compatible with Ubuntu 24.04 (Noble Numbat), which is the base for Linux Mint 22. They are specifically the 64-bit Intel/AMD versions (amd64).</p>
                             </div>
                         </div>
                     </div>
@@ -174,12 +173,12 @@
                     <div class="step-number">2</div>
                     <div class="step-content">
                         <h3 class="step-title">Transfer Files to USB</h3>
-                        <p class="step-description">Copy both .deb files onto a USB stick. Make sure you can easily locate them later.</p>
+                        <p class="step-description">Copy both .deb files (b43-fwcutter and firmware-b43-installer) onto a USB stick. Make sure you can easily locate them later on your Linux Mint 22 computer.</p>
                         <div class="tip-box">
                             <svg class="tip-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/>
                             </svg>
-                            <p><strong>Pro Tip:</strong> Create a folder on the USB stick named "wifi-drivers" to keep things organized.</p>
+                            <p><strong>Pro Tip:</strong> Create a folder on the USB stick named "mint22-wifi-drivers" to keep things organized.</p>
                         </div>
                     </div>
                 </div>
@@ -188,7 +187,7 @@
                     <div class="step-number">3</div>
                     <div class="step-content">
                         <h3 class="step-title">Install the Packages</h3>
-                        <p class="step-description">On the Linux Mint computer, plug in the USB, open Terminal, and install the packages with these commands:</p>
+                        <p class="step-description">On your Linux Mint 22 computer (Intel-based), plug in the USB stick, open Terminal, and install the packages with these commands:</p>
                         <div class="code-block">
                             <div class="code-header">
                                 <span class="code-label">Terminal Commands</span>
@@ -260,8 +259,8 @@ sudo dpkg -i /path/to/firmware-b43-installer*.deb</code></pre>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Linux Mint WiFi Fix Guide. All rights reserved.</p>
-            <p class="footer-note">This guide is provided as-is for educational purposes.</p>
+            <p>&copy; 2025 Linux Mint 22 WiFi Fix Guide. All rights reserved.</p>
+            <p class="footer-note">This guide is specifically for Linux Mint 22 on Intel-based systems and is provided as-is for educational purposes.</p>
         </div>
     </footer>
 
