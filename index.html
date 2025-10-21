@@ -8,20 +8,51 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <svg class="linux-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
-                    </svg>
-                    <h1>Linux Mint WiFi Fix</h1>
+                <div class="logo-wrapper">
+                    <div class="logo-badge">
+                        <svg class="linux-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Linux Mint WiFi Fix</h1>
+                        <span class="version-badge">v1.0</span>
+                    </div>
                 </div>
                 <p class="tagline">Professional WiFi Driver Installation Guide</p>
+                <div class="header-stats">
+                    <div class="stat-item">
+                        <span class="stat-icon">⚡</span>
+                        <span class="stat-text">Quick Fix</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-icon">✓</span>
+                        <span class="stat-text">Tested</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-icon">🛡️</span>
+                        <span class="stat-text">Safe</span>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="header-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" fill="white"/>
+            </svg>
         </div>
     </header>
 
@@ -29,39 +60,60 @@
         <div class="container">
             <section class="intro-section">
                 <div class="alert alert-info">
-                    <svg class="alert-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" fill="currentColor"/>
-                    </svg>
-                    <div>
-                        <h2 class="alert-title">Driver Manager Issue</h2>
+                    <div class="alert-icon-wrapper">
+                        <svg class="alert-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="alert-content">
+                        <div class="alert-header">
+                            <h2 class="alert-title">Driver Manager Issue</h2>
+                            <span class="alert-badge">Important</span>
+                        </div>
                         <p>If you don't see another option in Driver Manager, you'll need to remove the wrong driver and install the correct one manually. Follow the steps below to fix your WiFi connection.</p>
                     </div>
                 </div>
             </section>
 
             <section class="requirements-section">
-                <h2 class="section-title">What You'll Need</h2>
+                <div class="section-header">
+                    <h2 class="section-title">What You'll Need</h2>
+                    <p class="section-subtitle">Gather these items before starting the fix process</p>
+                </div>
                 <div class="requirements-grid">
                     <div class="requirement-card">
-                        <div class="requirement-icon">💻</div>
+                        <div class="requirement-icon-bg">
+                            <div class="requirement-icon">💻</div>
+                        </div>
                         <h3>Another Computer</h3>
                         <p>With internet access to download the drivers</p>
+                        <div class="card-decoration"></div>
                     </div>
                     <div class="requirement-card">
-                        <div class="requirement-icon">💾</div>
+                        <div class="requirement-icon-bg">
+                            <div class="requirement-icon">💾</div>
+                        </div>
                         <h3>USB Stick</h3>
                         <p>To transfer files to your Linux Mint computer</p>
+                        <div class="card-decoration"></div>
                     </div>
                     <div class="requirement-card">
-                        <div class="requirement-icon">🐧</div>
+                        <div class="requirement-icon-bg">
+                            <div class="requirement-icon">🐧</div>
+                        </div>
                         <h3>Linux Mint</h3>
                         <p>The computer needing the WiFi driver fix</p>
+                        <div class="card-decoration"></div>
                     </div>
                 </div>
             </section>
 
             <section class="steps-section">
-                <h2 class="section-title">Installation Steps</h2>
+                <div class="section-header">
+                    <h2 class="section-title">Installation Steps</h2>
+                    <p class="section-subtitle">Follow these 4 simple steps to fix your WiFi</p>
+                </div>
+                <div class="steps-timeline"></div>
                 
                 <div class="step-card">
                     <div class="step-number">1</div>
