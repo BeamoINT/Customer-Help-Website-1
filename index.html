@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Step-by-step guide to fix WiFi driver issues on Linux Mint">
+    <title>Linux Mint WiFi Driver Fix Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg class="linux-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                    </svg>
+                    <h1>Linux Mint WiFi Fix</h1>
+                </div>
+                <p class="tagline">Professional WiFi Driver Installation Guide</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="intro-section">
+                <div class="alert alert-info">
+                    <svg class="alert-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" fill="currentColor"/>
+                    </svg>
+                    <div>
+                        <h2 class="alert-title">Driver Manager Issue</h2>
+                        <p>If you don't see another option in Driver Manager, you'll need to remove the wrong driver and install the correct one manually. Follow the steps below to fix your WiFi connection.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="requirements-section">
+                <h2 class="section-title">What You'll Need</h2>
+                <div class="requirements-grid">
+                    <div class="requirement-card">
+                        <div class="requirement-icon">💻</div>
+                        <h3>Another Computer</h3>
+                        <p>With internet access to download the drivers</p>
+                    </div>
+                    <div class="requirement-card">
+                        <div class="requirement-icon">💾</div>
+                        <h3>USB Stick</h3>
+                        <p>To transfer files to your Linux Mint computer</p>
+                    </div>
+                    <div class="requirement-card">
+                        <div class="requirement-icon">🐧</div>
+                        <h3>Linux Mint</h3>
+                        <p>The computer needing the WiFi driver fix</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="steps-section">
+                <h2 class="section-title">Installation Steps</h2>
+                
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Download the Required Packages</h3>
+                        <p class="step-description">On the other computer with internet access, download these .deb packages from the official Ubuntu mirrors:</p>
+                        <div class="package-list">
+                            <div class="package-item">
+                                <span class="package-icon">📦</span>
+                                <code class="package-name">firmware-b43-installer</code>
+                            </div>
+                            <div class="package-item">
+                                <span class="package-icon">📦</span>
+                                <code class="package-name">b43-fwcutter</code>
+                            </div>
+                        </div>
+                        <div class="info-box">
+                            <svg class="info-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" fill="currentColor"/>
+                            </svg>
+                            <div>
+                                <p><strong>Where to download:</strong> These packages are available at <a href="https://packages.ubuntu.com" target="_blank" rel="noopener noreferrer">packages.ubuntu.com</a></p>
+                                <p class="info-note">Pick your Ubuntu version that matches Linux Mint, usually <strong>jammy/22.04</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Transfer Files to USB</h3>
+                        <p class="step-description">Copy both .deb files onto a USB stick. Make sure you can easily locate them later.</p>
+                        <div class="tip-box">
+                            <svg class="tip-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/>
+                            </svg>
+                            <p><strong>Pro Tip:</strong> Create a folder on the USB stick named "wifi-drivers" to keep things organized.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Install the Packages</h3>
+                        <p class="step-description">On the Linux Mint computer, plug in the USB, open Terminal, and install the packages with these commands:</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-label">Terminal Commands</span>
+                                <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" fill="currentColor"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <pre><code>sudo dpkg -i /path/to/b43-fwcutter*.deb
+sudo dpkg -i /path/to/firmware-b43-installer*.deb</code></pre>
+                        </div>
+                        <div class="warning-box">
+                            <svg class="warning-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z" fill="currentColor"/>
+                            </svg>
+                            <p><strong>Important:</strong> Replace <code>/path/to/</code> with the actual path to your USB stick. It's usually something like <code>/media/your-username/USB-NAME/</code></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Reboot Your Computer</h3>
+                        <p class="step-description">Restart your Linux Mint computer to apply the changes.</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-label">Terminal Command</span>
+                                <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" fill="currentColor"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <pre><code>sudo reboot</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="success-section">
+                <div class="success-card">
+                    <div class="success-icon">✅</div>
+                    <h2 class="success-title">Success!</h2>
+                    <p class="success-description">After reboot, the WiFi networks should show up in the Network Manager. You should now be able to connect to your WiFi network normally.</p>
+                </div>
+            </section>
+
+            <section class="troubleshooting-section">
+                <h2 class="section-title">Still Having Issues?</h2>
+                <div class="troubleshooting-grid">
+                    <div class="troubleshooting-card">
+                        <h3>Check Your Driver</h3>
+                        <p>Open Driver Manager and verify that the correct driver is active.</p>
+                    </div>
+                    <div class="troubleshooting-card">
+                        <h3>Verify Installation</h3>
+                        <p>Run <code>lsmod | grep b43</code> in Terminal to check if the driver loaded correctly.</p>
+                    </div>
+                    <div class="troubleshooting-card">
+                        <h3>Check System Logs</h3>
+                        <p>Use <code>dmesg | grep b43</code> to see if there are any error messages.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Linux Mint WiFi Fix Guide. All rights reserved.</p>
+            <p class="footer-note">This guide is provided as-is for educational purposes.</p>
+        </div>
+    </footer>
+
+    <script>
+        function copyCode(button) {
+            const codeBlock = button.closest('.code-block').querySelector('code');
+            const text = codeBlock.textContent;
+            
+            navigator.clipboard.writeText(text).then(() => {
+                const originalHTML = button.innerHTML;
+                button.innerHTML = '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="currentColor"/></svg>';
+                button.classList.add('copied');
+                
+                setTimeout(() => {
+                    button.innerHTML = originalHTML;
+                    button.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.step-card, .requirement-card, .troubleshooting-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
+
