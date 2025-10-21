@@ -119,24 +119,56 @@
                     <div class="step-number">1</div>
                     <div class="step-content">
                         <h3 class="step-title">Download the Required Packages</h3>
-                        <p class="step-description">On the other computer with internet access, download these .deb packages from the official Ubuntu mirrors:</p>
-                        <div class="package-list">
-                            <div class="package-item">
-                                <span class="package-icon">📦</span>
-                                <code class="package-name">firmware-b43-installer</code>
+                        <p class="step-description">On the other computer with internet access, download these .deb packages from the official Ubuntu mirrors. Click the download buttons below:</p>
+                        
+                        <div class="package-download-grid">
+                            <div class="package-download-card">
+                                <div class="package-header">
+                                    <span class="package-icon">📦</span>
+                                    <code class="package-name">b43-fwcutter</code>
+                                </div>
+                                <p class="package-description">Utility for extracting Broadcom 43xx firmware</p>
+                                <div class="download-buttons">
+                                    <a href="http://archive.ubuntu.com/ubuntu/pool/main/b/b43-fwcutter/b43-fwcutter_019-8_amd64.deb" class="download-btn primary" download>
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" fill="currentColor"/>
+                                        </svg>
+                                        <span>Download (64-bit)</span>
+                                    </a>
+                                    <a href="http://archive.ubuntu.com/ubuntu/pool/main/b/b43-fwcutter/b43-fwcutter_019-8_i386.deb" class="download-btn secondary" download>
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" fill="currentColor"/>
+                                        </svg>
+                                        <span>Download (32-bit)</span>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="package-item">
-                                <span class="package-icon">📦</span>
-                                <code class="package-name">b43-fwcutter</code>
+
+                            <div class="package-download-card">
+                                <div class="package-header">
+                                    <span class="package-icon">📦</span>
+                                    <code class="package-name">firmware-b43-installer</code>
+                                </div>
+                                <p class="package-description">Firmware installer for the b43 driver</p>
+                                <div class="download-buttons">
+                                    <a href="http://archive.ubuntu.com/ubuntu/pool/multiverse/b/b43-fwcutter/firmware-b43-installer_019-8_all.deb" class="download-btn primary" download>
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" fill="currentColor"/>
+                                        </svg>
+                                        <span>Download (All architectures)</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+
                         <div class="info-box">
                             <svg class="info-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" fill="currentColor"/>
                             </svg>
                             <div>
-                                <p><strong>Where to download:</strong> These packages are available at <a href="https://packages.ubuntu.com" target="_blank" rel="noopener noreferrer">packages.ubuntu.com</a></p>
-                                <p class="info-note">Pick your Ubuntu version that matches Linux Mint, usually <strong>jammy/22.04</strong></p>
+                                <p><strong>Download both packages:</strong> These are from the official Ubuntu repositories for Ubuntu 22.04 (Jammy), which is compatible with Linux Mint 21.</p>
+                                <p class="info-note"><strong>Not sure which version?</strong> Download the 64-bit version of b43-fwcutter (works for most modern computers). The firmware-b43-installer works on all systems.</p>
+                                <p class="info-note"><strong>Alternative sources:</strong> You can also find these at <a href="https://packages.ubuntu.com/jammy/b43-fwcutter" target="_blank" rel="noopener noreferrer">packages.ubuntu.com</a></p>
                             </div>
                         </div>
                     </div>
