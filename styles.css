@@ -751,6 +751,14 @@ section {
     line-height: 1.5;
 }
 
+.package-version {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-top: var(--spacing-sm);
+    font-style: italic;
+    text-align: center;
+}
+
 .download-buttons {
     display: flex;
     flex-direction: column;
